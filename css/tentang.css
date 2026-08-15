@@ -1,0 +1,433 @@
+.about-page  {
+
+background: #fffdf7;
+
+}
+
+.about-hero  {
+
+align-items: center;
+
+background: #dfead5;
+
+display: grid;
+
+gap: 80px;
+
+grid-template-columns: 1.1fr .7fr;
+
+min-height: 520px;
+
+padding: 72px max(30px, calc((100% - 1180px) / 2));
+
+}
+
+.about-hero h1  {
+
+font: 600 clamp(2.8rem, 5vw, 4.6rem) / 1.08 'Playfair Display', serif;
+
+letter-spacing: -.04em;
+
+margin: 0;
+
+}
+
+.about-hero > div > p:not(.eyebrow)  {
+
+color: var(--muted);
+
+margin: 22px 0 0;
+
+max-width: 540px;
+
+}
+
+.about-symbol  {
+
+align-items: center;
+
+background: #f27b5a;
+
+color: #fffdf7;
+
+display: flex;
+
+height: 280px;
+
+justify-content: center;
+
+position: relative;
+
+transform: rotate(4deg);
+
+}
+
+.about-symbol span  {
+
+font: 700 10rem 'Playfair Display', serif;
+
+}
+
+.about-symbol small  {
+
+bottom: 21px;
+
+font-size: .6rem;
+
+font-weight: 700;
+
+letter-spacing: .12em;
+
+line-height: 1.5;
+
+position: absolute;
+
+right: 22px;
+
+}
+
+.story  {
+
+align-items: center;
+
+display: grid;
+
+gap: 85px;
+
+grid-template-columns: .85fr 1fr;
+
+margin: auto;
+
+max-width: 1180px;
+
+padding: 105px 30px;
+
+}
+
+.story-photo  {
+
+height: 370px;
+
+position: relative;
+
+}
+
+.story-photo img  {
+
+height: 100%;
+
+object-fit: cover;
+
+width: 100%;
+
+}
+
+.story-photo span  {
+
+align-items: center;
+
+background: #f8c75c;
+
+bottom: -22px;
+
+color: #fffdf7;
+
+display: flex;
+
+font-size: 2.7rem;
+
+height: 85px;
+
+justify-content: center;
+
+position: absolute;
+
+right: -20px;
+
+width: 85px;
+
+}
+
+.story h2, .values h2, .team h2, .about-cta h2  {
+
+font-size: clamp(2rem, 3.5vw, 3.2rem);
+
+}
+
+.story p:not(.eyebrow)  {
+
+color: var(--muted);
+
+margin: 17px 0;
+
+}
+
+.story .text-link  {
+
+display: inline-block;
+
+margin-top: 10px;
+
+}
+
+.values  {
+
+background: #fcebd0;
+
+padding: 90px max(30px, calc((100% - 1180px) / 2));
+
+}
+
+.values-title  {
+
+max-width: 580px;
+
+}
+
+.value-grid  {
+
+display: grid;
+
+gap: 55px;
+
+grid-template-columns: repeat(3, 1fr);
+
+margin-top: 52px;
+
+}
+
+.value-grid article  {
+
+border-top: 2px solid #f27b5a;
+
+padding-top: 16px;
+
+}
+
+.value-grid span  {
+
+color: #d96144;
+
+font: 700 1.15rem 'Playfair Display', serif;
+
+}
+
+.value-grid h3  {
+
+font-size: 1.05rem;
+
+margin: 14px 0 7px;
+
+}
+
+.value-grid p  {
+
+color: var(--muted);
+
+font-size: .88rem;
+
+margin: 0;
+
+}
+
+.team  {
+
+margin: auto;
+
+max-width: 1180px;
+
+padding: 105px 30px;
+
+}
+
+.team-header  {
+
+align-items: end;
+
+display: flex;
+
+justify-content: space-between;
+
+}
+
+.team-header > p  {
+
+color: var(--muted);
+
+font-size: .9rem;
+
+max-width: 330px;
+
+}
+
+.team-grid  {
+
+display: grid;
+
+gap: 23px;
+
+grid-template-columns: repeat(3, 1fr);
+
+margin-top: 44px;
+
+}
+
+.mentor-photo  {
+
+height: 265px;
+
+overflow: hidden;
+
+}
+
+.mentor-photo img  {
+
+height: 100%;
+
+object-fit: cover;
+
+transition: transform .3s;
+
+width: 100%;
+
+}
+
+.mentor-photo:hover img  {
+
+transform: scale(1.05);
+
+}
+
+.team-grid h3  {
+
+margin: 15px 0 1px;
+
+}
+
+.team-grid p  {
+
+color: var(--muted);
+
+font-size: .8rem;
+
+margin: 0;
+
+}
+
+.about-cta  {
+
+background: #30493c;
+
+color: #fffdf7;
+
+padding: 90px 25px;
+
+text-align: center;
+
+}
+
+.about-cta .eyebrow  {
+
+color: #f8c75c;
+
+}
+
+.about-cta h2  {
+
+margin: 0 auto 28px;
+
+}
+
+.about-cta .btn  {
+
+background: #f27b5a;
+
+}
+
+.about-cta .btn:hover  {
+
+background: #f8c75c;
+
+color: var(--ink);
+
+}
+
+@media (max-width: 760px)  {
+
+.about-hero, .story  {
+
+gap: 40px;
+
+grid-template-columns: 1fr;
+
+padding-left: 22px;
+
+padding-right: 22px;
+
+}
+
+.about-hero  {
+
+padding-top: 45px;
+
+padding-bottom: 60px;
+
+}
+
+.about-symbol  {
+
+height: 200px;
+
+max-width: 330px;
+
+}
+
+.about-symbol span  {
+
+font-size: 7rem;
+
+}
+
+.story  {
+
+padding-top: 70px;
+
+padding-bottom: 70px;
+
+}
+
+.story-photo  {
+
+height: 300px;
+
+}
+
+.values, .team  {
+
+padding: 70px 22px;
+
+}
+
+.value-grid, .team-grid  {
+
+gap: 28px;
+
+grid-template-columns: 1fr;
+
+}
+
+.team-header  {
+
+align-items: start;
+
+flex-direction: column;
+
+}
+
+.about-page .nav-links  {
+
+display: none;
+
+}
+
+}
